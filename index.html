@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<body>
+	<div id="head">
+		<img src="img/6-hospital.png" alt="hospital-icon" id="hospital_icon"> 
+		<div><label id="Name_clinic" style="float: right;">ГОРОДСКАЯ ПОЛИКЛИНИКА № 6</label>
+			<label style="float: left;">ЕДИНАЯ СПРАВОЧНАЯ И ВЫЗОВ ВРАЧА НА ДОМ</label>
+		</div>
+	</div>
+	<div id="navbar, topnav" id="myTopnav">
+		<ul>
+			<li><a href="#">ГЛАВНАЯ</a></li><li style="padding-right: 5px;">|</li>
+			<li><a href="#"style="color: red;"><img src="img/heart_icon.png"alt="heart" height="20px" width="30px" align="center"> ДИСПАНСЕРИЗАЦИЯ</a></li><li>|</li>
+			<li><a href="#">РАСПИСАНИЕ ВРАЧЕЙ</a></li><li>|</li>
+			<li><a href="#">ПЛАТНЫЕ УСЛУГИ</a></li><li>|</li>
+			<li><a href="#">ИНФОРМАЦИЯ</a></li><li>|</li>
+			<li><a href="#">КОНТАКТЫ</a></li><li>|</li>
+		</ul>
+	</div>
+	<div class="content">
+		<img id="dvImage" style="height: 308px; width:100%;  background-repeat: no-repeat;">
+		</img>
+		<p></p>
+		<script  src="JS/code.js"></script>
+	</div>
+		
+	<script type="text/javascript">
+		window.onscroll = function() {myFunction()};
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+		function myFunction() {
+			if(window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky");
+			}else{
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script>
+</body>
+</html>
